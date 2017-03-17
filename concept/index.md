@@ -1,15 +1,11 @@
 # 概念
 
-## 概况
+为了真正了解 Axon，必须要面对一系列的概念：
 
-下图展示了基于 CQRS 的事件驱动架构的例子。
-
-显示在左边的UI模块，以两种方式和应用的其他部分交互：
-
-1. 发送命令/Command给应用： 见上面部分
-2. 向应用发起查询：见下半部分
-
-![overview](images/detailed-architecture-overview.png)
+1. Domian Driven Develop / DDD / 领域驱动开发
+2. Event Driven / Event Souring
+3. CQRS 模式
+4. Axon 中上述概念的对应
 
 
 

@@ -30,6 +30,7 @@ Aggregate 从技术上说是一个抽象概念，而不是一个具体的实物�
 DDD 中 Aggregate 的标准定义：
 
 > A DDD aggregate is a cluster of domain objects that can be treated as a single unit. An example may be an order and its line-items, these will be separate objects, but it's useful to treat the order (together with its line items) as a single aggregate.
+>
 > DDD 聚合是可以被视为单个单元的领域对象的集群。例如订单及其订单项，这些是单独的对象，但将订单（和它的订单项）视为单个聚合是很有用的。
 >
 > by [Martin Fowler](https://www.martinfowler.com/bliki/DDD_Aggregate.html)
@@ -46,18 +47,32 @@ Aggregate 是领域对象的逻辑集合，以形成一个原子而有粘性的�
 #### Aggregate Root
 
 > An aggregate will have one of its component objects be the aggregate root. Any references from outside the aggregate should only go to the aggregate root. The root can thus ensure the integrity of the aggregate as a whole.
+>
 > 聚合的组件对象中有一个被视为聚合根。来自聚合外部的任何引用应仅到达聚合根。因此根可以确保聚合的完整性。
 
 
 #### 注意事项
 
 > DDD Aggregates are sometimes confused with collection classes (lists, maps, etc). DDD aggregates are domain concepts (order, clinic visit, playlist), while collections are generic. An aggregate will often contain mutliple collections, together with simple fields. The term "aggregate" is a common one, and is used in various different contexts (e.g. UML), in which case it does not refer to the same concept as a DDD aggregate.
+>
 > DDD 聚合有时和集合类(lists,maps,等)混淆。DDD 聚合是领域概念(订单，播放列表)，而集合是通用的。聚合经常会包含多个集合，和简单字段在一起。术语 "aggregate" 是一个通用术语，并用于多种不同上下文（如UML），在这种情况下它和DDD的aggregate并不是同一个概念。
 
 ### Repository
 
 Repository 用来抽象获取和持久化 Aggregate 的方式。
 
+在 DDD 中，不能直接访问 aggregate， 必须通过 Repository。
+
+### Domain Events
+
+> The concept of domain event arises from the desire to have fully encapsulated subsystems within a bigger system in domain driven design. Domain events are meant to be the bridge between two encapsulated system that should not have direct dependency on each other but still needs to work together.
+>
+> 领域事件的概念源于在领域驱动设计中拥有完全封闭的子系统的渴望。领域事件相当于两个封闭系统之间的桥梁，封闭系统不应该彼此直接依赖，但仍需要一起工作。
+
+
+> Domain Events are thus messages that convey information to the outside world, about changes that has occurred in an aggregate.
+>
+> 领域事件是那些向外部世界传递信息的消息，关于在聚合中已经发生的变更。
 
 
 
