@@ -32,4 +32,6 @@
 		* [步骤 7：选择事件序列化](tutorial/tutorial1/step7.md)
 		* [步骤 8：和应用交互](tutorial/tutorial1/step8.md)
 		* [步骤 9：部署](tutorial/tutorial1/step9.md)
+		* [总结](tutorial/tutorial1/conclusion.md)
+	* [用Axon构建微服务](tutorial/tutorial2/index.md)
 * [全文标签总览](tags.md)
