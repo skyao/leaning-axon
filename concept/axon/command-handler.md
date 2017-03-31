@@ -50,5 +50,5 @@ public class BankAccount {
 }
 ```
 
-Event bus 会随后将 MoneyDepositedEvent 分派给敢兴趣的 Event handler.
+Event bus 会随后将 MoneyDepositedEvent 分派给感兴趣的 Event handler.
 

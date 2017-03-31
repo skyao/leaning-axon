@@ -1,0 +1,4 @@
+# AMQPConfiguration
+
+TBD: AxonAutoConfiguration.AMQPConfiguration
+

@@ -1,9 +1,8 @@
 # Command Bus
 
-
 Axon 中 CommandBus 的实现类和继承结构：
 
-![](../../concept/images/command-bus-hierarchy.jpg)
+![](../../concept/axon/images/command-bus-hierarchy.jpg)
 
 ### CommandBus
 

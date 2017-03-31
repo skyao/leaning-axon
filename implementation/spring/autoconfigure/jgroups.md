@@ -1,0 +1,4 @@
+# JGroupsConfiguration
+
+TBD: AxonAutoConfiguration.JGroupsConfiguration
+
